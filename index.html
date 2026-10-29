@@ -71,10 +71,10 @@ img{max-width:100%}
 .side .pts{font-family:var(--font-display);font-weight:800;font-size:80px;line-height:.92;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
 .side .pts.bump{animation:bump .35s ease-out}
 @keyframes bump{0%{transform:scale(1)}35%{transform:scale(1.18);color:var(--ball)}100%{transform:scale(1)}}
-.mid{display:flex;flex-direction:column;align-items:center;gap:6px;padding-bottom:12px}
+.mid{display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:6px;padding-bottom:0;min-width:0}
 .mid .game{font-family:var(--font-display);font-weight:800;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--board-muted);white-space:nowrap}
 .mid .bimg{width:34px;height:34px;filter:drop-shadow(0 3px 6px #0008)}
-.status{margin-top:10px;display:flex;justify-content:center}
+.status{margin-top:6px;display:flex;justify-content:center;white-space:nowrap}
 .pill{display:inline-flex;align-items:center;gap:7px;padding:5px 13px;border-radius:999px;background:#ffffff14;border:1px solid #ffffff1f;font-size:12.5px;font-weight:600;color:var(--board-muted)}
 .bimg{display:inline-block;background:var(--ballimg) center/contain no-repeat;flex:none}
 .pill .bimg{width:16px;height:16px}
@@ -241,10 +241,9 @@ input[type=text]{width:100%;min-width:0;border:1px solid var(--line);border-radi
     </div>
     <div class="scoreline">
       <button class="side" id="sideL" data-goto="players" aria-label="Editar escalação"><div class="label"><span class="swatch" id="swL"></span><b id="lblL"></b></div><div class="names" id="namesL"></div><div class="pts" id="ptsL">0</div></button>
-      <div class="mid"><div class="game" id="gameTitle">Game 1</div><span class="bimg" aria-hidden="true"></span></div>
+      <div class="mid"><div class="game" id="gameTitle">Game 1</div><span class="bimg" aria-hidden="true"></span><div class="status"><span class="pill" id="status"></span></div></div>
       <button class="side right" id="sideR" data-goto="players" aria-label="Editar escalação"><div class="label"><span class="swatch" id="swR"></span><b id="lblR"></b></div><div class="names" id="namesR"></div><div class="pts" id="ptsR">0</div></button>
     </div>
-    <div class="status"><span class="pill" id="status"></span></div>
   </div>
 </header>
 
