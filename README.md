@@ -1,2 +1,2 @@
-# Treino se Pickleball
+# Treino de Pickleball
 Placar de treino competitivo de pickleball.
